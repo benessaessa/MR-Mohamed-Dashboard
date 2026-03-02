@@ -266,6 +266,12 @@ function CourseDetails() {
             </div>
             <div className="modal-body">
               <p>هل أنت متأكد من حذف هذه المحاضرة؟</p>
+              {deletingLectureId && (
+                <div className="alert alert-warning">
+                  <strong>رقم المحاضرة:</strong> {lectures.findIndex(l => l.id === deletingLectureId) + 1}<br/>
+                  <strong>عنوان المحاضرة:</strong> {lectures.find(l => l.id === deletingLectureId)?.title || '-'}
+                </div>
+              )}
               <p className="text-muted">لا يمكن التراجع عن هذا الإجراء.</p>
             </div>
             <div className="modal-footer">
