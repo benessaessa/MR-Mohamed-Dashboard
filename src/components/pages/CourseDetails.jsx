@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Layout from '../layout/Layout';
-
+import homeImage from '../../assets/images/home.webp';
 function CourseDetails() {
   const [lectures, setLectures] = useState([
     { id: 1, title: 'مقدمة في الفيزياء', title2: 'تفاصيل إضافية للشرح', file: '#', homeworkFile: '#', homeworkVideo: 'واجبات منزلية الفصل الأول', examGrade: 85, homeworkGrade: 90 },
@@ -85,7 +85,7 @@ function CourseDetails() {
       <div className="row">
         <div className="col-lg-12">
           <div className="card mb-4">
-            <img id="courseVideo" className="card-img-top" src="/images/home.webp" alt="Course Image" />
+            <img id="courseVideo" className="card-img-top" src={homeImage} alt="Course Image" />
             <div className="card-body">
               <h1 className="card-title fw-bold mb-3 d-lg-flex justify-content-between">
                 مراجعة شهر نوفمبر اولي ثانوي
