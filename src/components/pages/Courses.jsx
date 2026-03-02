@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../layout/Layout';
+import homeImage from '../../assets/images/home.webp';
 
 function Courses() {
   const [courses, setCourses] = useState([
-    { id: 1, title: 'مراجعة شهر نوفمبر اولي ثانوي', date: '10 مارس 2025', price: '100', image: '/images/home.webp', description: 'دورة شاملة تغطي أهم الموضوعات مع شروحات مبسطة وتمارين تطبيقية ومراجعات سريعة لتثبيت المعلومات.', grade: 'first', category: 'math', link: '' },
-    { id: 2, title: 'مراجعة شهر نوفمبر ثانية ثانوي', date: '10 مارس 2025', price: '100', image: '/images/home.webp', description: 'دورة شاملة تغطي أهم الموضوعات مع شروحات مبسطة وتمارين تطبيقية ومراجعات سريعة لتثبيت المعلومات.', grade: 'second', category: 'math', link: '' },
-    { id: 3, title: 'مراجعة شهر نوفمبر ثالثة ثانوي', date: '10 مارس 2025', price: '100', image: '/images/home.webp', description: 'دورة شاملة تغطي أهم الموضوعات مع شروحات مبسطة وتمارين تطبيقية ومراجعات سريعة لتثبيت المعلومات.', grade: 'third', category: 'science', link: '' },
+    { id: 1, title: 'مراجعة شهر نوفمبر اولي ثانوي', date: '10 مارس 2025', price: '100', image: homeImage, description: 'دورة شاملة تغطي أهم الموضوعات مع شروحات مبسطة وتمارين تطبيقية ومراجعات سريعة لتثبيت المعلومات.', grade: 'first', category: 'math', link: '' },
+    { id: 2, title: 'مراجعة شهر نوفمبر ثانية ثانوي', date: '10 مارس 2025', price: '100', image: homeImage, description: 'دورة شاملة تغطي أهم الموضوعات مع شروحات مبسطة وتمارين تطبيقية ومراجعات سريعة لتثبيت المعلومات.', grade: 'second', category: 'math', link: '' },
+    { id: 3, title: 'مراجعة شهر نوفمبر ثالثة ثانوي', date: '10 مارس 2025', price: '100', image: homeImage, description: 'دورة شاملة تغطي أهم الموضوعات مع شروحات مبسطة وتمارين تطبيقية ومراجعات سريعة لتثبيت المعلومات.', grade: 'third', category: 'science', link: '' },
   ]);
 
   const [editingCourse, setEditingCourse] = useState(null);

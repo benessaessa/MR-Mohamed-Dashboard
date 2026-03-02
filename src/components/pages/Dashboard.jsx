@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Chart, registerables } from 'chart.js';
 import Layout from '../layout/Layout';
+import homeImage from '../../assets/images/home.webp';
 
 // Register Chart.js components
 Chart.register(...registerables);
@@ -18,9 +19,9 @@ function Dashboard() {
   ];
 
   const suggestedCourses = [
-    { id: 1, title: 'مراجعة شهر نوفمبر اولي ثانوي', date: '10 مارس 2025', price: '100', image: '/images/home.webp', description: 'دورة شاملة تغطي أهم الموضوعات مع شروحات مبسطة وتمارين تطبيقية ومراجعات سريعة لتثبيت المعلومات.' },
-    { id: 2, title: 'مراجعة شهر نوفمبر ثانية ثانوي', date: '10 مارس 2025', price: '100', image: '/images/home.webp', description: 'دورة شاملة تغطي أهم الموضوعات مع شروحات مبسطة وتمارين تطبيقية ومراجعات سريعة لتثبيت المعلومات.' },
-    { id: 3, title: 'مراجعة شهر نوفمبر ثالثة ثانوي', date: '10 مارس 2025', price: '100', image: '/images/home.webp', description: 'دورة شاملة تغطي أهم الموضوعات مع شروحات مبسطة وتمارين تطبيقية ومراجعات سريعة لتثبيت المعلومات.' },
+    { id: 1, title: 'مراجعة شهر نوفمبر اولي ثانوي', date: '10 مارس 2025', price: '100', image: homeImage, description: 'دورة شاملة تغطي أهم الموضوعات مع شروحات مبسطة وتمارين تطبيقية ومراجعات سريعة لتثبيت المعلومات.' },
+    { id: 2, title: 'مراجعة شهر نوفمبر ثانية ثانوي', date: '10 مارس 2025', price: '100', image: homeImage, description: 'دورة شاملة تغطي أهم الموضوعات مع شروحات مبسطة وتمارين تطبيقية ومراجعات سريعة لتثبيت المعلومات.' },
+    { id: 3, title: 'مراجعة شهر نوفمبر ثالثة ثانوي', date: '10 مارس 2025', price: '100', image: homeImage, description: 'دورة شاملة تغطي أهم الموضوعات مع شروحات مبسطة وتمارين تطبيقية ومراجعات سريعة لتثبيت المعلومات.' },
   ];
 
   useEffect(() => {
