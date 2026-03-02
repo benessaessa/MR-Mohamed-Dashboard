@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import logo from '../../assets/images/logo.png';
 
 function Navbar() {
   const location = useLocation();
@@ -24,7 +25,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
       <div className="container-fluid">
         <Link className="navbar-brand d-flex align-items-center" to="/">
-          <img src="/images/logo.png" className="navbar-img" alt="" />
+          <img src={logo} className="navbar-img" alt="" />
         </Link>
         {/* Mobile Theme Toggle - Outside Link */}
         <div className="d-lg-none d-flex align-items-center me-3">

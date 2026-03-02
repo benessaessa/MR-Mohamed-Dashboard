@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/images/logo.png';
 
 function Footer() {
   return (
@@ -7,7 +8,7 @@ function Footer() {
       <div className="container-fluid pt-4">
         <div className="row justify-content-between">
           <div className="col-lg-6 col-md-6">
-            <img src="/images/logo.png" alt="img" height="65px" />
+            <img src={logo} alt="img" height="65px" />
             <p className="pt-4 smallText">
               منصة تعليمية تهدف الي تعليم الطلاب بأحدث الطرق الحديثة وابسطها
             </p>

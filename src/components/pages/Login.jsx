@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import logo from '../../assets/images/logo.png';
 
 function Login() {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ function Login() {
             <div className="card shadow-lg border-0 rounded-4">
               <div className="card-body p-4">
                 <div className="text-center mb-4">
-                  <img src="/images/logo.png" alt="Logo" className="mb-3" style={{ height: '60px' }} />
+                  <img src={logo} alt="Logo" className="mb-3" style={{ height: '60px' }} />
                   <h2 className="fw-bold text-primary">تسجيل الدخول</h2>
                   <p className="text-muted">أدخل بياناتك للوصول إلى حسابك</p>
                 </div>
