@@ -745,7 +745,7 @@ label {
 
 .dark-mode .navbar .nav-item .nav-link:hover,
 .dark-mode .navbar .nav-item .nav-link.active {
-  color: var(--color-primary) !important;
+  color: var(--color-white) !important;
 }
 
 .dark-mode .navbar-toggler {
