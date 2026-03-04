@@ -125,7 +125,7 @@ function Dashboard() {
                   <h5 className="card-title-course fw-bold">{course.title}</h5>
                   <div className="d-flex align-items-center justify-content-between mb-2">
                     <small className="text-muted">
-                      <i className="far fa-calendar-alt" aria-hidden="true"></i>
+                      <i className="far fa-calendar-alt pe-1" aria-hidden="true"></i>
                       {course.date}
                     </small>
                     <span className="badge bg-success">{course.price} جنية</span>
