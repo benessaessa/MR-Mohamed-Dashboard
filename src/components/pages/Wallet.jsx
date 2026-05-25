@@ -224,7 +224,7 @@ function Wallet() {
           <table className="table table-striped table-bordered">
             <thead>
               <tr>
-                <th>الاسم</th>
+                <th>إسم الطالب</th>
                 <th>البريد الإلكتروني</th>
                 <th>رقم الهاتف</th>
                 <th>رصيد المحفظة</th>
