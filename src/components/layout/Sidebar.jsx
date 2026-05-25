@@ -48,7 +48,9 @@ function Sidebar({ collapsed, setCollapsed }) {
     { path: '/codes', icon: 'fa-code', label: 'الأكواد' },
     { path: '/requests', icon: 'fa-edit', label: 'طلبات الكورسات' },
     { path: '/profile', icon: 'fa-user', label: 'الملف الشخصي' },
+    { path: '/wallet', icon: 'fa-wallet', label: 'إدارة المحافظ' },
   ];
+
 
   return (
     <nav ref={sidebarRef} className={`sidebar shadow-sm pt-5 ${collapsed ? 'collapsed' : ''}`} id="sidebar">

@@ -23,6 +23,8 @@ import Requests from './components/pages/Requests';
 import Reports from './components/pages/Reports';
 import Notifications from './components/pages/Notifications';
 import Profile from './components/pages/Profile';
+import Wallet from './components/pages/Wallet';
+
 
 function App() {
   return (
@@ -42,6 +44,8 @@ function App() {
         <Route path="/reports" element={<Reports />} />
         <Route path="/notifications" element={<Notifications />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/wallet" element={<Wallet />} />
+
       </Routes>
     </AuthProvider>
   );
