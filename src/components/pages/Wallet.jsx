@@ -128,7 +128,7 @@ function Wallet() {
                   <div className="h4 mb-0 fw-bolder">
                     {walletRows.reduce((sum, u) => sum + Number(u.walletAmount || 0), 0)}
                   </div>
-                  <div className="text-muted small">إجمالي رصيد جميع الطلاب</div>
+                  <div className="opacity-75 small">إجمالي رصيد جميع الطلاب</div>
                 </div>
               </div>
             </div>
@@ -143,7 +143,7 @@ function Wallet() {
                 <div>
                   <div className="text-titles fw-bold">عدد الطلاب</div>
                   <div className="h4 mb-0 fw-bolder">{walletRows.length}</div>
-                  <div className="text-muted small">إجمالي طلاب النظام</div>
+                  <div className="opacity-75 small">إجمالي طلاب النظام</div>
                 </div>
               </div>
             </div>
@@ -160,7 +160,7 @@ function Wallet() {
                   <div className="h4 mb-0 fw-bolder">
                     {walletRows.filter((u) => Number(u.walletAmount || 0) > 0).length}
                   </div>
-                  <div className="text-muted small">طلاب رصيدهم أكبر من صفر</div>
+                  <div className="opacity-75 small">طلاب رصيدهم أكبر من صفر</div>
                 </div>
               </div>
             </div>
@@ -182,7 +182,7 @@ function Wallet() {
                             walletRows.length
                         )}
                   </div>
-                  <div className="text-muted small">متوسط رصيد الطلاب</div>
+                  <div className="opacity-75 small">متوسط رصيد الطلاب</div>
                 </div>
               </div>
             </div>
