@@ -218,6 +218,19 @@ body {
   padding-inline: 1rem;
 }
 
+@media screen and (max-width:768px){
+  .navbar {
+    padding-inline: 0;
+  }
+  .navbar .container-fluid {
+    background-color: var(--bg-color-main) !important;
+    padding-inline: 1rem !important;
+  }
+  .custom-menu-mobile{
+    width:100%;
+  }
+}
+
 .navbar .nav-item .nav-link {
   color: var(--color-white) !important;
   font-size: 1.1rem;
@@ -227,6 +240,11 @@ body {
   color: var(--color-primary) !important;
 }
 
+@media screen and (max-width:768px){
+  .navbar .nav-item .nav-link:hover {
+      color: var(--color-white) !important;
+  }
+}
 .navbar .nav-item .nav-link.active {
   color: var(--color-white) !important;
   border-bottom: 2px solid var(--color-primary);
@@ -241,7 +259,7 @@ body {
 @media screen and (max-width: 991px) {
   .navbar-collapse {
     background-color: var(--bg-color-main) !important;
-    padding: 1rem;
+    padding: 0rem;
     border-radius: 0 0 0.5rem 0.5rem;
   }
   
@@ -605,6 +623,7 @@ table tr:nth-child(even) td {
   .navbar .navbar-nav {
     height: 84vh;
     overflow: auto;
+    padding-bottom: 1.5rem !important;
   }
   .navbar .container-fluid {
     padding: 0;

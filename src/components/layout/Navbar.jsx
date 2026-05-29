@@ -63,7 +63,7 @@ function Navbar() {
             </div>
           </div>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-2 align-items-lg-center align-items-start pt-3 pt-lg-0">
-            <div className="d-lg-none d-block">
+            <div className="d-lg-none d-block custom-menu-mobile">
               <li className="nav-item mb-3">
                 <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>
                   <i className="fas fa-home me-2"></i>
@@ -116,6 +116,18 @@ function Navbar() {
                 <Link to="/requests" className={`nav-link ${location.pathname === '/requests' ? 'active' : ''}`}>
                   <i className="fas fa-edit me-2"></i>
                   <span>طلبات الكورسات</span>
+                </Link>
+              </li>
+              <li className="nav-item mb-3">
+                <Link to="/requests" className={`nav-link ${location.pathname === '/requests' ? 'active' : ''}`}>
+                  <i className="fas fa-edit me-2"></i>
+                  <span>طلبات الكورسات</span>
+                </Link>
+              </li>
+              <li className="nav-item mb-3">
+                <Link to="/settings" className={`nav-link ${location.pathname === '/wallet' ? 'active' : ''}`}>
+                  <i className="fas fa-wallet me-2"></i>
+                  <span>المحفظة</span>
                 </Link>
               </li>
             </div>
